@@ -206,5 +206,9 @@ table.placement = "H", include.rownames=FALSE, size = "small")
 \newpage
 \onecolumn
 \section{Appendix}
+Below is a table from a paper I'm currently working on. Without the analysis object in \texttt{R}, I have to create this table myself.
+<<size='scriptsize'>>=
+
+@
 
 \end{document}
