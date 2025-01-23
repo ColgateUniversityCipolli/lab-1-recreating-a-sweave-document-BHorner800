@@ -66,11 +66,13 @@ For this lab, you will
 We can center text in Sweave
 \end{center}
 
+
 \subsection{Bold, Italics, and Underlining}
 We can \textbf{bold}, \textit{italicize},
 \underline{underline}, and \emph{emphasize} text in Sweave.
 
 Note, I did a clumn break here so that the list wasn't broken across columns. \columnbreak
+ 
   
 \subsection{Lists, and Numbered Lists}
 We can write an unordered list in Sweave.
@@ -92,8 +94,10 @@ We can write a lettered list in Sweave.
 \item third item
 \end{enumerate}
 
+
 \subsection{Submissions}
 This part of the midterm is due Sunday November 14 by 5p. I will not accept late submissions. Note that you may use this template to help build your introduction and methods sections, and you can use the work you did as a group during the datathon. Still, I expect this submission to be your own summary and extension of that work without collaboration.
+
 
 \subsection{Typing Mathematical Equations}
 We can write a one line equation that is centered like this
@@ -111,6 +115,7 @@ x&=x \tag{Dividing both sides by 9}
 This equality holds for any $x$.
 
 Note, I did a page break here so that the next section started on a clean page. \newpage
+
 
 \subsection{Running R Code}
 Code chunks can be entered into Sweave; eg., here are some comments.
@@ -142,6 +147,31 @@ result.with.error
 @
 
 The result is \Sexpr{result.with.error}. Note that I did not type the result, but I used the \verb|\Sexpr{}| command.
+
+
+\subsection{Plotting}
+We can also plot with R.
+<<plot1, eval=FALSE, size='scriptsize'>>=
+#Plot a histogram of random exponential data
+hist(rexp(100))
+@
+\begin{figure}[H]
+  \begin{center}
+%This code is evaluated, but not printed
+%warning=FALSE and message=FALSE ensure no text is returned as a by product of printing; this would cause an error in that plot+text is returned instead of just the plot
+<<echo=FALSE, warning=FALSE, message=FALSE, fig.dim=c(5,3.5)>>=
+<<plot1>>
+@
+  \caption{A histogram of random expotentially distributed data, $n=100$}
+  \label{plot1}
+  \end{center}
+\end{figure}
+\columnbreak
+
+\subsection{Tables}
+
+
+
 
 \section{Methods}
 Describe the data you are working with, if applicable. Describe the specific process you will follow to answer the question at hand. This does not mean you should write something like this.
