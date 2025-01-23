@@ -112,6 +112,37 @@ This equality holds for any $x$.
 
 Note, I did a page break here so that the next section started on a clean page. \newpage
 
+\subsection{Running R Code}
+Code chunks can be entered into Sweave; eg., here are some comments.
+<<size='scriptsize'>>=
+# R code goes here
+# Output is automatically printed in the pdf
+@
+
+Below, you can see that we can do algebra with R.
+<<size='scriptsize'>>=
+8*(9-5) + 9  #8(x-5) + x for x=9
+@
+
+Below, we show we can produced the code without evaluating it.
+<<eval=FALSE, size='scriptsize'>>=
+8*(9-5) + 9  #8(x-5) + x for x=9
+@
+
+Alternatively, we can produced the output without the code.
+<<echo=FALSE, size='scriptsize'>>=
+8*(9-5) + 9  #8(x-5) + x for x=9
+@
+
+We can also call object values from \texttt{R} directly.
+<<size='scriptsize'>>=
+result <- 8*(9-5) + 9   #8(x-5) + x for x=9
+result.with.error <- result + rnorm(1, mean = 0, sd = 0.1)
+result.with.error
+@
+
+The result is \Sexpr{result.with.error}. Note that I did not type the result, but I used the \verb|\Sexpr{}| command.
+
 \section{Methods}
 Describe the data you are working with, if applicable. Describe the specific process you will follow to answer the question at hand. This does not mean you should write something like this.
 \begin{quote}
