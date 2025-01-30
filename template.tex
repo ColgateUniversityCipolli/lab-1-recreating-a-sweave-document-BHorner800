@@ -218,12 +218,12 @@ We can also call object values from \texttt{R} directly.
 \hldef{result.with.error}
 \end{alltt}
 \begin{verbatim}
-## [1] 40.97223
+## [1] 41.0479
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
 
-The result is 40.9722263. Note that I did not type the result, but I used the \verb|\Sexpr{}| command.
+The result is 41.0479005. Note that I did not type the result, but I used the \verb|\Sexpr{}| command.
 
 
 \subsection{Plotting}
@@ -282,7 +282,7 @@ If we want to print this nicely, we can do so using the xtable package \citep{xt
 \end{kframe}
 \end{knitrout}
 % latex table generated in R 4.4.2 by xtable 1.8-4 package
-% Thu Jan 23 17:19:53 2025
+% Thu Jan 30 09:58:27 2025
 \begin{table}[H]
 \centering
 \begingroup\small
@@ -322,6 +322,386 @@ Rural Male & Rural Female & Urban Male & Urban Female \\
 \onecolumn
 \section{Appendix}
 Below is a table from a paper I'm currently working on. Without the analysis object in \texttt{R}, I have to create this table myself.
+
+
+
+The \texttt{palmerpenguins} package for \texttt{R} \citep{Palmerpenguins} provides data on adult foraging penguins near Palmer Station, Antarctica. \ref{Palmerpenguins.tab} is too big to fit nicely in our column-based-template above, so I've placed it here in the abstract by saving it and presenting it scaled to 0.75.
+
+
+
+
+% latex table generated in R 4.4.2 by xtable 1.8-4 package
+% Thu Jan 30 09:58:28 2025
+\begin{table}[ht]
+\centering
+\begin{tabular}{rllrrrrlr}
+  \hline
+ & species & island & bill\_length\_mm & bill\_depth\_mm & flipper\_length\_mm & body\_mass\_g & sex & year \\ 
+  \hline
+1 & Adelie & Torgersen & 39.10 & 18.70 & 181 & 3750 & male & 2007 \\ 
+  2 & Adelie & Torgersen & 39.50 & 17.40 & 186 & 3800 & female & 2007 \\ 
+  3 & Adelie & Torgersen & 40.30 & 18.00 & 195 & 3250 & female & 2007 \\ 
+  4 & Adelie & Torgersen &  &  &  &  &  & 2007 \\ 
+  5 & Adelie & Torgersen & 36.70 & 19.30 & 193 & 3450 & female & 2007 \\ 
+  6 & Adelie & Torgersen & 39.30 & 20.60 & 190 & 3650 & male & 2007 \\ 
+  7 & Adelie & Torgersen & 38.90 & 17.80 & 181 & 3625 & female & 2007 \\ 
+  8 & Adelie & Torgersen & 39.20 & 19.60 & 195 & 4675 & male & 2007 \\ 
+  9 & Adelie & Torgersen & 34.10 & 18.10 & 193 & 3475 &  & 2007 \\ 
+  10 & Adelie & Torgersen & 42.00 & 20.20 & 190 & 4250 &  & 2007 \\ 
+  11 & Adelie & Torgersen & 37.80 & 17.10 & 186 & 3300 &  & 2007 \\ 
+  12 & Adelie & Torgersen & 37.80 & 17.30 & 180 & 3700 &  & 2007 \\ 
+  13 & Adelie & Torgersen & 41.10 & 17.60 & 182 & 3200 & female & 2007 \\ 
+  14 & Adelie & Torgersen & 38.60 & 21.20 & 191 & 3800 & male & 2007 \\ 
+  15 & Adelie & Torgersen & 34.60 & 21.10 & 198 & 4400 & male & 2007 \\ 
+  16 & Adelie & Torgersen & 36.60 & 17.80 & 185 & 3700 & female & 2007 \\ 
+  17 & Adelie & Torgersen & 38.70 & 19.00 & 195 & 3450 & female & 2007 \\ 
+  18 & Adelie & Torgersen & 42.50 & 20.70 & 197 & 4500 & male & 2007 \\ 
+  19 & Adelie & Torgersen & 34.40 & 18.40 & 184 & 3325 & female & 2007 \\ 
+  20 & Adelie & Torgersen & 46.00 & 21.50 & 194 & 4200 & male & 2007 \\ 
+  21 & Adelie & Biscoe & 37.80 & 18.30 & 174 & 3400 & female & 2007 \\ 
+  22 & Adelie & Biscoe & 37.70 & 18.70 & 180 & 3600 & male & 2007 \\ 
+  23 & Adelie & Biscoe & 35.90 & 19.20 & 189 & 3800 & female & 2007 \\ 
+  24 & Adelie & Biscoe & 38.20 & 18.10 & 185 & 3950 & male & 2007 \\ 
+  25 & Adelie & Biscoe & 38.80 & 17.20 & 180 & 3800 & male & 2007 \\ 
+  26 & Adelie & Biscoe & 35.30 & 18.90 & 187 & 3800 & female & 2007 \\ 
+  27 & Adelie & Biscoe & 40.60 & 18.60 & 183 & 3550 & male & 2007 \\ 
+  28 & Adelie & Biscoe & 40.50 & 17.90 & 187 & 3200 & female & 2007 \\ 
+  29 & Adelie & Biscoe & 37.90 & 18.60 & 172 & 3150 & female & 2007 \\ 
+  30 & Adelie & Biscoe & 40.50 & 18.90 & 180 & 3950 & male & 2007 \\ 
+  31 & Adelie & Dream & 39.50 & 16.70 & 178 & 3250 & female & 2007 \\ 
+  32 & Adelie & Dream & 37.20 & 18.10 & 178 & 3900 & male & 2007 \\ 
+  33 & Adelie & Dream & 39.50 & 17.80 & 188 & 3300 & female & 2007 \\ 
+  34 & Adelie & Dream & 40.90 & 18.90 & 184 & 3900 & male & 2007 \\ 
+  35 & Adelie & Dream & 36.40 & 17.00 & 195 & 3325 & female & 2007 \\ 
+  36 & Adelie & Dream & 39.20 & 21.10 & 196 & 4150 & male & 2007 \\ 
+  37 & Adelie & Dream & 38.80 & 20.00 & 190 & 3950 & male & 2007 \\ 
+  38 & Adelie & Dream & 42.20 & 18.50 & 180 & 3550 & female & 2007 \\ 
+  39 & Adelie & Dream & 37.60 & 19.30 & 181 & 3300 & female & 2007 \\ 
+  40 & Adelie & Dream & 39.80 & 19.10 & 184 & 4650 & male & 2007 \\ 
+  41 & Adelie & Dream & 36.50 & 18.00 & 182 & 3150 & female & 2007 \\ 
+  42 & Adelie & Dream & 40.80 & 18.40 & 195 & 3900 & male & 2007 \\ 
+  43 & Adelie & Dream & 36.00 & 18.50 & 186 & 3100 & female & 2007 \\ 
+  44 & Adelie & Dream & 44.10 & 19.70 & 196 & 4400 & male & 2007 \\ 
+  45 & Adelie & Dream & 37.00 & 16.90 & 185 & 3000 & female & 2007 \\ 
+  46 & Adelie & Dream & 39.60 & 18.80 & 190 & 4600 & male & 2007 \\ 
+  47 & Adelie & Dream & 41.10 & 19.00 & 182 & 3425 & male & 2007 \\ 
+  48 & Adelie & Dream & 37.50 & 18.90 & 179 & 2975 &  & 2007 \\ 
+  49 & Adelie & Dream & 36.00 & 17.90 & 190 & 3450 & female & 2007 \\ 
+  50 & Adelie & Dream & 42.30 & 21.20 & 191 & 4150 & male & 2007 \\ 
+  51 & Adelie & Biscoe & 39.60 & 17.70 & 186 & 3500 & female & 2008 \\ 
+  52 & Adelie & Biscoe & 40.10 & 18.90 & 188 & 4300 & male & 2008 \\ 
+  53 & Adelie & Biscoe & 35.00 & 17.90 & 190 & 3450 & female & 2008 \\ 
+  54 & Adelie & Biscoe & 42.00 & 19.50 & 200 & 4050 & male & 2008 \\ 
+  55 & Adelie & Biscoe & 34.50 & 18.10 & 187 & 2900 & female & 2008 \\ 
+  56 & Adelie & Biscoe & 41.40 & 18.60 & 191 & 3700 & male & 2008 \\ 
+  57 & Adelie & Biscoe & 39.00 & 17.50 & 186 & 3550 & female & 2008 \\ 
+  58 & Adelie & Biscoe & 40.60 & 18.80 & 193 & 3800 & male & 2008 \\ 
+  59 & Adelie & Biscoe & 36.50 & 16.60 & 181 & 2850 & female & 2008 \\ 
+  60 & Adelie & Biscoe & 37.60 & 19.10 & 194 & 3750 & male & 2008 \\ 
+  61 & Adelie & Biscoe & 35.70 & 16.90 & 185 & 3150 & female & 2008 \\ 
+  62 & Adelie & Biscoe & 41.30 & 21.10 & 195 & 4400 & male & 2008 \\ 
+  63 & Adelie & Biscoe & 37.60 & 17.00 & 185 & 3600 & female & 2008 \\ 
+  64 & Adelie & Biscoe & 41.10 & 18.20 & 192 & 4050 & male & 2008 \\ 
+  65 & Adelie & Biscoe & 36.40 & 17.10 & 184 & 2850 & female & 2008 \\ 
+  66 & Adelie & Biscoe & 41.60 & 18.00 & 192 & 3950 & male & 2008 \\ 
+  67 & Adelie & Biscoe & 35.50 & 16.20 & 195 & 3350 & female & 2008 \\ 
+  68 & Adelie & Biscoe & 41.10 & 19.10 & 188 & 4100 & male & 2008 \\ 
+  69 & Adelie & Torgersen & 35.90 & 16.60 & 190 & 3050 & female & 2008 \\ 
+  70 & Adelie & Torgersen & 41.80 & 19.40 & 198 & 4450 & male & 2008 \\ 
+  71 & Adelie & Torgersen & 33.50 & 19.00 & 190 & 3600 & female & 2008 \\ 
+  72 & Adelie & Torgersen & 39.70 & 18.40 & 190 & 3900 & male & 2008 \\ 
+  73 & Adelie & Torgersen & 39.60 & 17.20 & 196 & 3550 & female & 2008 \\ 
+  74 & Adelie & Torgersen & 45.80 & 18.90 & 197 & 4150 & male & 2008 \\ 
+  75 & Adelie & Torgersen & 35.50 & 17.50 & 190 & 3700 & female & 2008 \\ 
+  76 & Adelie & Torgersen & 42.80 & 18.50 & 195 & 4250 & male & 2008 \\ 
+  77 & Adelie & Torgersen & 40.90 & 16.80 & 191 & 3700 & female & 2008 \\ 
+  78 & Adelie & Torgersen & 37.20 & 19.40 & 184 & 3900 & male & 2008 \\ 
+  79 & Adelie & Torgersen & 36.20 & 16.10 & 187 & 3550 & female & 2008 \\ 
+  80 & Adelie & Torgersen & 42.10 & 19.10 & 195 & 4000 & male & 2008 \\ 
+  81 & Adelie & Torgersen & 34.60 & 17.20 & 189 & 3200 & female & 2008 \\ 
+  82 & Adelie & Torgersen & 42.90 & 17.60 & 196 & 4700 & male & 2008 \\ 
+  83 & Adelie & Torgersen & 36.70 & 18.80 & 187 & 3800 & female & 2008 \\ 
+  84 & Adelie & Torgersen & 35.10 & 19.40 & 193 & 4200 & male & 2008 \\ 
+  85 & Adelie & Dream & 37.30 & 17.80 & 191 & 3350 & female & 2008 \\ 
+  86 & Adelie & Dream & 41.30 & 20.30 & 194 & 3550 & male & 2008 \\ 
+  87 & Adelie & Dream & 36.30 & 19.50 & 190 & 3800 & male & 2008 \\ 
+  88 & Adelie & Dream & 36.90 & 18.60 & 189 & 3500 & female & 2008 \\ 
+  89 & Adelie & Dream & 38.30 & 19.20 & 189 & 3950 & male & 2008 \\ 
+  90 & Adelie & Dream & 38.90 & 18.80 & 190 & 3600 & female & 2008 \\ 
+  91 & Adelie & Dream & 35.70 & 18.00 & 202 & 3550 & female & 2008 \\ 
+  92 & Adelie & Dream & 41.10 & 18.10 & 205 & 4300 & male & 2008 \\ 
+  93 & Adelie & Dream & 34.00 & 17.10 & 185 & 3400 & female & 2008 \\ 
+  94 & Adelie & Dream & 39.60 & 18.10 & 186 & 4450 & male & 2008 \\ 
+  95 & Adelie & Dream & 36.20 & 17.30 & 187 & 3300 & female & 2008 \\ 
+  96 & Adelie & Dream & 40.80 & 18.90 & 208 & 4300 & male & 2008 \\ 
+  97 & Adelie & Dream & 38.10 & 18.60 & 190 & 3700 & female & 2008 \\ 
+  98 & Adelie & Dream & 40.30 & 18.50 & 196 & 4350 & male & 2008 \\ 
+  99 & Adelie & Dream & 33.10 & 16.10 & 178 & 2900 & female & 2008 \\ 
+  100 & Adelie & Dream & 43.20 & 18.50 & 192 & 4100 & male & 2008 \\ 
+  101 & Adelie & Biscoe & 35.00 & 17.90 & 192 & 3725 & female & 2009 \\ 
+  102 & Adelie & Biscoe & 41.00 & 20.00 & 203 & 4725 & male & 2009 \\ 
+  103 & Adelie & Biscoe & 37.70 & 16.00 & 183 & 3075 & female & 2009 \\ 
+  104 & Adelie & Biscoe & 37.80 & 20.00 & 190 & 4250 & male & 2009 \\ 
+  105 & Adelie & Biscoe & 37.90 & 18.60 & 193 & 2925 & female & 2009 \\ 
+  106 & Adelie & Biscoe & 39.70 & 18.90 & 184 & 3550 & male & 2009 \\ 
+  107 & Adelie & Biscoe & 38.60 & 17.20 & 199 & 3750 & female & 2009 \\ 
+  108 & Adelie & Biscoe & 38.20 & 20.00 & 190 & 3900 & male & 2009 \\ 
+  109 & Adelie & Biscoe & 38.10 & 17.00 & 181 & 3175 & female & 2009 \\ 
+  110 & Adelie & Biscoe & 43.20 & 19.00 & 197 & 4775 & male & 2009 \\ 
+  111 & Adelie & Biscoe & 38.10 & 16.50 & 198 & 3825 & female & 2009 \\ 
+  112 & Adelie & Biscoe & 45.60 & 20.30 & 191 & 4600 & male & 2009 \\ 
+  113 & Adelie & Biscoe & 39.70 & 17.70 & 193 & 3200 & female & 2009 \\ 
+  114 & Adelie & Biscoe & 42.20 & 19.50 & 197 & 4275 & male & 2009 \\ 
+  115 & Adelie & Biscoe & 39.60 & 20.70 & 191 & 3900 & female & 2009 \\ 
+  116 & Adelie & Biscoe & 42.70 & 18.30 & 196 & 4075 & male & 2009 \\ 
+  117 & Adelie & Torgersen & 38.60 & 17.00 & 188 & 2900 & female & 2009 \\ 
+  118 & Adelie & Torgersen & 37.30 & 20.50 & 199 & 3775 & male & 2009 \\ 
+  119 & Adelie & Torgersen & 35.70 & 17.00 & 189 & 3350 & female & 2009 \\ 
+  120 & Adelie & Torgersen & 41.10 & 18.60 & 189 & 3325 & male & 2009 \\ 
+  121 & Adelie & Torgersen & 36.20 & 17.20 & 187 & 3150 & female & 2009 \\ 
+  122 & Adelie & Torgersen & 37.70 & 19.80 & 198 & 3500 & male & 2009 \\ 
+  123 & Adelie & Torgersen & 40.20 & 17.00 & 176 & 3450 & female & 2009 \\ 
+  124 & Adelie & Torgersen & 41.40 & 18.50 & 202 & 3875 & male & 2009 \\ 
+  125 & Adelie & Torgersen & 35.20 & 15.90 & 186 & 3050 & female & 2009 \\ 
+  126 & Adelie & Torgersen & 40.60 & 19.00 & 199 & 4000 & male & 2009 \\ 
+  127 & Adelie & Torgersen & 38.80 & 17.60 & 191 & 3275 & female & 2009 \\ 
+  128 & Adelie & Torgersen & 41.50 & 18.30 & 195 & 4300 & male & 2009 \\ 
+  129 & Adelie & Torgersen & 39.00 & 17.10 & 191 & 3050 & female & 2009 \\ 
+  130 & Adelie & Torgersen & 44.10 & 18.00 & 210 & 4000 & male & 2009 \\ 
+  131 & Adelie & Torgersen & 38.50 & 17.90 & 190 & 3325 & female & 2009 \\ 
+  132 & Adelie & Torgersen & 43.10 & 19.20 & 197 & 3500 & male & 2009 \\ 
+  133 & Adelie & Dream & 36.80 & 18.50 & 193 & 3500 & female & 2009 \\ 
+  134 & Adelie & Dream & 37.50 & 18.50 & 199 & 4475 & male & 2009 \\ 
+  135 & Adelie & Dream & 38.10 & 17.60 & 187 & 3425 & female & 2009 \\ 
+  136 & Adelie & Dream & 41.10 & 17.50 & 190 & 3900 & male & 2009 \\ 
+  137 & Adelie & Dream & 35.60 & 17.50 & 191 & 3175 & female & 2009 \\ 
+  138 & Adelie & Dream & 40.20 & 20.10 & 200 & 3975 & male & 2009 \\ 
+  139 & Adelie & Dream & 37.00 & 16.50 & 185 & 3400 & female & 2009 \\ 
+  140 & Adelie & Dream & 39.70 & 17.90 & 193 & 4250 & male & 2009 \\ 
+  141 & Adelie & Dream & 40.20 & 17.10 & 193 & 3400 & female & 2009 \\ 
+  142 & Adelie & Dream & 40.60 & 17.20 & 187 & 3475 & male & 2009 \\ 
+  143 & Adelie & Dream & 32.10 & 15.50 & 188 & 3050 & female & 2009 \\ 
+  144 & Adelie & Dream & 40.70 & 17.00 & 190 & 3725 & male & 2009 \\ 
+  145 & Adelie & Dream & 37.30 & 16.80 & 192 & 3000 & female & 2009 \\ 
+  146 & Adelie & Dream & 39.00 & 18.70 & 185 & 3650 & male & 2009 \\ 
+  147 & Adelie & Dream & 39.20 & 18.60 & 190 & 4250 & male & 2009 \\ 
+  148 & Adelie & Dream & 36.60 & 18.40 & 184 & 3475 & female & 2009 \\ 
+  149 & Adelie & Dream & 36.00 & 17.80 & 195 & 3450 & female & 2009 \\ 
+  150 & Adelie & Dream & 37.80 & 18.10 & 193 & 3750 & male & 2009 \\ 
+  151 & Adelie & Dream & 36.00 & 17.10 & 187 & 3700 & female & 2009 \\ 
+  152 & Adelie & Dream & 41.50 & 18.50 & 201 & 4000 & male & 2009 \\ 
+  153 & Gentoo & Biscoe & 46.10 & 13.20 & 211 & 4500 & female & 2007 \\ 
+  154 & Gentoo & Biscoe & 50.00 & 16.30 & 230 & 5700 & male & 2007 \\ 
+  155 & Gentoo & Biscoe & 48.70 & 14.10 & 210 & 4450 & female & 2007 \\ 
+  156 & Gentoo & Biscoe & 50.00 & 15.20 & 218 & 5700 & male & 2007 \\ 
+  157 & Gentoo & Biscoe & 47.60 & 14.50 & 215 & 5400 & male & 2007 \\ 
+  158 & Gentoo & Biscoe & 46.50 & 13.50 & 210 & 4550 & female & 2007 \\ 
+  159 & Gentoo & Biscoe & 45.40 & 14.60 & 211 & 4800 & female & 2007 \\ 
+  160 & Gentoo & Biscoe & 46.70 & 15.30 & 219 & 5200 & male & 2007 \\ 
+  161 & Gentoo & Biscoe & 43.30 & 13.40 & 209 & 4400 & female & 2007 \\ 
+  162 & Gentoo & Biscoe & 46.80 & 15.40 & 215 & 5150 & male & 2007 \\ 
+  163 & Gentoo & Biscoe & 40.90 & 13.70 & 214 & 4650 & female & 2007 \\ 
+  164 & Gentoo & Biscoe & 49.00 & 16.10 & 216 & 5550 & male & 2007 \\ 
+  165 & Gentoo & Biscoe & 45.50 & 13.70 & 214 & 4650 & female & 2007 \\ 
+  166 & Gentoo & Biscoe & 48.40 & 14.60 & 213 & 5850 & male & 2007 \\ 
+  167 & Gentoo & Biscoe & 45.80 & 14.60 & 210 & 4200 & female & 2007 \\ 
+  168 & Gentoo & Biscoe & 49.30 & 15.70 & 217 & 5850 & male & 2007 \\ 
+  169 & Gentoo & Biscoe & 42.00 & 13.50 & 210 & 4150 & female & 2007 \\ 
+  170 & Gentoo & Biscoe & 49.20 & 15.20 & 221 & 6300 & male & 2007 \\ 
+  171 & Gentoo & Biscoe & 46.20 & 14.50 & 209 & 4800 & female & 2007 \\ 
+  172 & Gentoo & Biscoe & 48.70 & 15.10 & 222 & 5350 & male & 2007 \\ 
+  173 & Gentoo & Biscoe & 50.20 & 14.30 & 218 & 5700 & male & 2007 \\ 
+  174 & Gentoo & Biscoe & 45.10 & 14.50 & 215 & 5000 & female & 2007 \\ 
+  175 & Gentoo & Biscoe & 46.50 & 14.50 & 213 & 4400 & female & 2007 \\ 
+  176 & Gentoo & Biscoe & 46.30 & 15.80 & 215 & 5050 & male & 2007 \\ 
+  177 & Gentoo & Biscoe & 42.90 & 13.10 & 215 & 5000 & female & 2007 \\ 
+  178 & Gentoo & Biscoe & 46.10 & 15.10 & 215 & 5100 & male & 2007 \\ 
+  179 & Gentoo & Biscoe & 44.50 & 14.30 & 216 & 4100 &  & 2007 \\ 
+  180 & Gentoo & Biscoe & 47.80 & 15.00 & 215 & 5650 & male & 2007 \\ 
+  181 & Gentoo & Biscoe & 48.20 & 14.30 & 210 & 4600 & female & 2007 \\ 
+  182 & Gentoo & Biscoe & 50.00 & 15.30 & 220 & 5550 & male & 2007 \\ 
+  183 & Gentoo & Biscoe & 47.30 & 15.30 & 222 & 5250 & male & 2007 \\ 
+  184 & Gentoo & Biscoe & 42.80 & 14.20 & 209 & 4700 & female & 2007 \\ 
+  185 & Gentoo & Biscoe & 45.10 & 14.50 & 207 & 5050 & female & 2007 \\ 
+  186 & Gentoo & Biscoe & 59.60 & 17.00 & 230 & 6050 & male & 2007 \\ 
+  187 & Gentoo & Biscoe & 49.10 & 14.80 & 220 & 5150 & female & 2008 \\ 
+  188 & Gentoo & Biscoe & 48.40 & 16.30 & 220 & 5400 & male & 2008 \\ 
+  189 & Gentoo & Biscoe & 42.60 & 13.70 & 213 & 4950 & female & 2008 \\ 
+  190 & Gentoo & Biscoe & 44.40 & 17.30 & 219 & 5250 & male & 2008 \\ 
+  191 & Gentoo & Biscoe & 44.00 & 13.60 & 208 & 4350 & female & 2008 \\ 
+  192 & Gentoo & Biscoe & 48.70 & 15.70 & 208 & 5350 & male & 2008 \\ 
+  193 & Gentoo & Biscoe & 42.70 & 13.70 & 208 & 3950 & female & 2008 \\ 
+  194 & Gentoo & Biscoe & 49.60 & 16.00 & 225 & 5700 & male & 2008 \\ 
+  195 & Gentoo & Biscoe & 45.30 & 13.70 & 210 & 4300 & female & 2008 \\ 
+  196 & Gentoo & Biscoe & 49.60 & 15.00 & 216 & 4750 & male & 2008 \\ 
+  197 & Gentoo & Biscoe & 50.50 & 15.90 & 222 & 5550 & male & 2008 \\ 
+  198 & Gentoo & Biscoe & 43.60 & 13.90 & 217 & 4900 & female & 2008 \\ 
+  199 & Gentoo & Biscoe & 45.50 & 13.90 & 210 & 4200 & female & 2008 \\ 
+  200 & Gentoo & Biscoe & 50.50 & 15.90 & 225 & 5400 & male & 2008 \\ 
+  201 & Gentoo & Biscoe & 44.90 & 13.30 & 213 & 5100 & female & 2008 \\ 
+  202 & Gentoo & Biscoe & 45.20 & 15.80 & 215 & 5300 & male & 2008 \\ 
+  203 & Gentoo & Biscoe & 46.60 & 14.20 & 210 & 4850 & female & 2008 \\ 
+  204 & Gentoo & Biscoe & 48.50 & 14.10 & 220 & 5300 & male & 2008 \\ 
+  205 & Gentoo & Biscoe & 45.10 & 14.40 & 210 & 4400 & female & 2008 \\ 
+  206 & Gentoo & Biscoe & 50.10 & 15.00 & 225 & 5000 & male & 2008 \\ 
+  207 & Gentoo & Biscoe & 46.50 & 14.40 & 217 & 4900 & female & 2008 \\ 
+  208 & Gentoo & Biscoe & 45.00 & 15.40 & 220 & 5050 & male & 2008 \\ 
+  209 & Gentoo & Biscoe & 43.80 & 13.90 & 208 & 4300 & female & 2008 \\ 
+  210 & Gentoo & Biscoe & 45.50 & 15.00 & 220 & 5000 & male & 2008 \\ 
+  211 & Gentoo & Biscoe & 43.20 & 14.50 & 208 & 4450 & female & 2008 \\ 
+  212 & Gentoo & Biscoe & 50.40 & 15.30 & 224 & 5550 & male & 2008 \\ 
+  213 & Gentoo & Biscoe & 45.30 & 13.80 & 208 & 4200 & female & 2008 \\ 
+  214 & Gentoo & Biscoe & 46.20 & 14.90 & 221 & 5300 & male & 2008 \\ 
+  215 & Gentoo & Biscoe & 45.70 & 13.90 & 214 & 4400 & female & 2008 \\ 
+  216 & Gentoo & Biscoe & 54.30 & 15.70 & 231 & 5650 & male & 2008 \\ 
+  217 & Gentoo & Biscoe & 45.80 & 14.20 & 219 & 4700 & female & 2008 \\ 
+  218 & Gentoo & Biscoe & 49.80 & 16.80 & 230 & 5700 & male & 2008 \\ 
+  219 & Gentoo & Biscoe & 46.20 & 14.40 & 214 & 4650 &  & 2008 \\ 
+  220 & Gentoo & Biscoe & 49.50 & 16.20 & 229 & 5800 & male & 2008 \\ 
+  221 & Gentoo & Biscoe & 43.50 & 14.20 & 220 & 4700 & female & 2008 \\ 
+  222 & Gentoo & Biscoe & 50.70 & 15.00 & 223 & 5550 & male & 2008 \\ 
+  223 & Gentoo & Biscoe & 47.70 & 15.00 & 216 & 4750 & female & 2008 \\ 
+  224 & Gentoo & Biscoe & 46.40 & 15.60 & 221 & 5000 & male & 2008 \\ 
+  225 & Gentoo & Biscoe & 48.20 & 15.60 & 221 & 5100 & male & 2008 \\ 
+  226 & Gentoo & Biscoe & 46.50 & 14.80 & 217 & 5200 & female & 2008 \\ 
+  227 & Gentoo & Biscoe & 46.40 & 15.00 & 216 & 4700 & female & 2008 \\ 
+  228 & Gentoo & Biscoe & 48.60 & 16.00 & 230 & 5800 & male & 2008 \\ 
+  229 & Gentoo & Biscoe & 47.50 & 14.20 & 209 & 4600 & female & 2008 \\ 
+  230 & Gentoo & Biscoe & 51.10 & 16.30 & 220 & 6000 & male & 2008 \\ 
+  231 & Gentoo & Biscoe & 45.20 & 13.80 & 215 & 4750 & female & 2008 \\ 
+  232 & Gentoo & Biscoe & 45.20 & 16.40 & 223 & 5950 & male & 2008 \\ 
+  233 & Gentoo & Biscoe & 49.10 & 14.50 & 212 & 4625 & female & 2009 \\ 
+  234 & Gentoo & Biscoe & 52.50 & 15.60 & 221 & 5450 & male & 2009 \\ 
+  235 & Gentoo & Biscoe & 47.40 & 14.60 & 212 & 4725 & female & 2009 \\ 
+  236 & Gentoo & Biscoe & 50.00 & 15.90 & 224 & 5350 & male & 2009 \\ 
+  237 & Gentoo & Biscoe & 44.90 & 13.80 & 212 & 4750 & female & 2009 \\ 
+  238 & Gentoo & Biscoe & 50.80 & 17.30 & 228 & 5600 & male & 2009 \\ 
+  239 & Gentoo & Biscoe & 43.40 & 14.40 & 218 & 4600 & female & 2009 \\ 
+  240 & Gentoo & Biscoe & 51.30 & 14.20 & 218 & 5300 & male & 2009 \\ 
+  241 & Gentoo & Biscoe & 47.50 & 14.00 & 212 & 4875 & female & 2009 \\ 
+  242 & Gentoo & Biscoe & 52.10 & 17.00 & 230 & 5550 & male & 2009 \\ 
+  243 & Gentoo & Biscoe & 47.50 & 15.00 & 218 & 4950 & female & 2009 \\ 
+  244 & Gentoo & Biscoe & 52.20 & 17.10 & 228 & 5400 & male & 2009 \\ 
+  245 & Gentoo & Biscoe & 45.50 & 14.50 & 212 & 4750 & female & 2009 \\ 
+  246 & Gentoo & Biscoe & 49.50 & 16.10 & 224 & 5650 & male & 2009 \\ 
+  247 & Gentoo & Biscoe & 44.50 & 14.70 & 214 & 4850 & female & 2009 \\ 
+  248 & Gentoo & Biscoe & 50.80 & 15.70 & 226 & 5200 & male & 2009 \\ 
+  249 & Gentoo & Biscoe & 49.40 & 15.80 & 216 & 4925 & male & 2009 \\ 
+  250 & Gentoo & Biscoe & 46.90 & 14.60 & 222 & 4875 & female & 2009 \\ 
+  251 & Gentoo & Biscoe & 48.40 & 14.40 & 203 & 4625 & female & 2009 \\ 
+  252 & Gentoo & Biscoe & 51.10 & 16.50 & 225 & 5250 & male & 2009 \\ 
+  253 & Gentoo & Biscoe & 48.50 & 15.00 & 219 & 4850 & female & 2009 \\ 
+  254 & Gentoo & Biscoe & 55.90 & 17.00 & 228 & 5600 & male & 2009 \\ 
+  255 & Gentoo & Biscoe & 47.20 & 15.50 & 215 & 4975 & female & 2009 \\ 
+  256 & Gentoo & Biscoe & 49.10 & 15.00 & 228 & 5500 & male & 2009 \\ 
+  257 & Gentoo & Biscoe & 47.30 & 13.80 & 216 & 4725 &  & 2009 \\ 
+  258 & Gentoo & Biscoe & 46.80 & 16.10 & 215 & 5500 & male & 2009 \\ 
+  259 & Gentoo & Biscoe & 41.70 & 14.70 & 210 & 4700 & female & 2009 \\ 
+  260 & Gentoo & Biscoe & 53.40 & 15.80 & 219 & 5500 & male & 2009 \\ 
+  261 & Gentoo & Biscoe & 43.30 & 14.00 & 208 & 4575 & female & 2009 \\ 
+  262 & Gentoo & Biscoe & 48.10 & 15.10 & 209 & 5500 & male & 2009 \\ 
+  263 & Gentoo & Biscoe & 50.50 & 15.20 & 216 & 5000 & female & 2009 \\ 
+  264 & Gentoo & Biscoe & 49.80 & 15.90 & 229 & 5950 & male & 2009 \\ 
+  265 & Gentoo & Biscoe & 43.50 & 15.20 & 213 & 4650 & female & 2009 \\ 
+  266 & Gentoo & Biscoe & 51.50 & 16.30 & 230 & 5500 & male & 2009 \\ 
+  267 & Gentoo & Biscoe & 46.20 & 14.10 & 217 & 4375 & female & 2009 \\ 
+  268 & Gentoo & Biscoe & 55.10 & 16.00 & 230 & 5850 & male & 2009 \\ 
+  269 & Gentoo & Biscoe & 44.50 & 15.70 & 217 & 4875 &  & 2009 \\ 
+  270 & Gentoo & Biscoe & 48.80 & 16.20 & 222 & 6000 & male & 2009 \\ 
+  271 & Gentoo & Biscoe & 47.20 & 13.70 & 214 & 4925 & female & 2009 \\ 
+  272 & Gentoo & Biscoe &  &  &  &  &  & 2009 \\ 
+  273 & Gentoo & Biscoe & 46.80 & 14.30 & 215 & 4850 & female & 2009 \\ 
+  274 & Gentoo & Biscoe & 50.40 & 15.70 & 222 & 5750 & male & 2009 \\ 
+  275 & Gentoo & Biscoe & 45.20 & 14.80 & 212 & 5200 & female & 2009 \\ 
+  276 & Gentoo & Biscoe & 49.90 & 16.10 & 213 & 5400 & male & 2009 \\ 
+  277 & Chinstrap & Dream & 46.50 & 17.90 & 192 & 3500 & female & 2007 \\ 
+  278 & Chinstrap & Dream & 50.00 & 19.50 & 196 & 3900 & male & 2007 \\ 
+  279 & Chinstrap & Dream & 51.30 & 19.20 & 193 & 3650 & male & 2007 \\ 
+  280 & Chinstrap & Dream & 45.40 & 18.70 & 188 & 3525 & female & 2007 \\ 
+  281 & Chinstrap & Dream & 52.70 & 19.80 & 197 & 3725 & male & 2007 \\ 
+  282 & Chinstrap & Dream & 45.20 & 17.80 & 198 & 3950 & female & 2007 \\ 
+  283 & Chinstrap & Dream & 46.10 & 18.20 & 178 & 3250 & female & 2007 \\ 
+  284 & Chinstrap & Dream & 51.30 & 18.20 & 197 & 3750 & male & 2007 \\ 
+  285 & Chinstrap & Dream & 46.00 & 18.90 & 195 & 4150 & female & 2007 \\ 
+  286 & Chinstrap & Dream & 51.30 & 19.90 & 198 & 3700 & male & 2007 \\ 
+  287 & Chinstrap & Dream & 46.60 & 17.80 & 193 & 3800 & female & 2007 \\ 
+  288 & Chinstrap & Dream & 51.70 & 20.30 & 194 & 3775 & male & 2007 \\ 
+  289 & Chinstrap & Dream & 47.00 & 17.30 & 185 & 3700 & female & 2007 \\ 
+  290 & Chinstrap & Dream & 52.00 & 18.10 & 201 & 4050 & male & 2007 \\ 
+  291 & Chinstrap & Dream & 45.90 & 17.10 & 190 & 3575 & female & 2007 \\ 
+  292 & Chinstrap & Dream & 50.50 & 19.60 & 201 & 4050 & male & 2007 \\ 
+  293 & Chinstrap & Dream & 50.30 & 20.00 & 197 & 3300 & male & 2007 \\ 
+  294 & Chinstrap & Dream & 58.00 & 17.80 & 181 & 3700 & female & 2007 \\ 
+  295 & Chinstrap & Dream & 46.40 & 18.60 & 190 & 3450 & female & 2007 \\ 
+  296 & Chinstrap & Dream & 49.20 & 18.20 & 195 & 4400 & male & 2007 \\ 
+  297 & Chinstrap & Dream & 42.40 & 17.30 & 181 & 3600 & female & 2007 \\ 
+  298 & Chinstrap & Dream & 48.50 & 17.50 & 191 & 3400 & male & 2007 \\ 
+  299 & Chinstrap & Dream & 43.20 & 16.60 & 187 & 2900 & female & 2007 \\ 
+  300 & Chinstrap & Dream & 50.60 & 19.40 & 193 & 3800 & male & 2007 \\ 
+  301 & Chinstrap & Dream & 46.70 & 17.90 & 195 & 3300 & female & 2007 \\ 
+  302 & Chinstrap & Dream & 52.00 & 19.00 & 197 & 4150 & male & 2007 \\ 
+  303 & Chinstrap & Dream & 50.50 & 18.40 & 200 & 3400 & female & 2008 \\ 
+  304 & Chinstrap & Dream & 49.50 & 19.00 & 200 & 3800 & male & 2008 \\ 
+  305 & Chinstrap & Dream & 46.40 & 17.80 & 191 & 3700 & female & 2008 \\ 
+  306 & Chinstrap & Dream & 52.80 & 20.00 & 205 & 4550 & male & 2008 \\ 
+  307 & Chinstrap & Dream & 40.90 & 16.60 & 187 & 3200 & female & 2008 \\ 
+  308 & Chinstrap & Dream & 54.20 & 20.80 & 201 & 4300 & male & 2008 \\ 
+  309 & Chinstrap & Dream & 42.50 & 16.70 & 187 & 3350 & female & 2008 \\ 
+  310 & Chinstrap & Dream & 51.00 & 18.80 & 203 & 4100 & male & 2008 \\ 
+  311 & Chinstrap & Dream & 49.70 & 18.60 & 195 & 3600 & male & 2008 \\ 
+  312 & Chinstrap & Dream & 47.50 & 16.80 & 199 & 3900 & female & 2008 \\ 
+  313 & Chinstrap & Dream & 47.60 & 18.30 & 195 & 3850 & female & 2008 \\ 
+  314 & Chinstrap & Dream & 52.00 & 20.70 & 210 & 4800 & male & 2008 \\ 
+  315 & Chinstrap & Dream & 46.90 & 16.60 & 192 & 2700 & female & 2008 \\ 
+  316 & Chinstrap & Dream & 53.50 & 19.90 & 205 & 4500 & male & 2008 \\ 
+  317 & Chinstrap & Dream & 49.00 & 19.50 & 210 & 3950 & male & 2008 \\ 
+  318 & Chinstrap & Dream & 46.20 & 17.50 & 187 & 3650 & female & 2008 \\ 
+  319 & Chinstrap & Dream & 50.90 & 19.10 & 196 & 3550 & male & 2008 \\ 
+  320 & Chinstrap & Dream & 45.50 & 17.00 & 196 & 3500 & female & 2008 \\ 
+  321 & Chinstrap & Dream & 50.90 & 17.90 & 196 & 3675 & female & 2009 \\ 
+  322 & Chinstrap & Dream & 50.80 & 18.50 & 201 & 4450 & male & 2009 \\ 
+  323 & Chinstrap & Dream & 50.10 & 17.90 & 190 & 3400 & female & 2009 \\ 
+  324 & Chinstrap & Dream & 49.00 & 19.60 & 212 & 4300 & male & 2009 \\ 
+  325 & Chinstrap & Dream & 51.50 & 18.70 & 187 & 3250 & male & 2009 \\ 
+  326 & Chinstrap & Dream & 49.80 & 17.30 & 198 & 3675 & female & 2009 \\ 
+  327 & Chinstrap & Dream & 48.10 & 16.40 & 199 & 3325 & female & 2009 \\ 
+  328 & Chinstrap & Dream & 51.40 & 19.00 & 201 & 3950 & male & 2009 \\ 
+  329 & Chinstrap & Dream & 45.70 & 17.30 & 193 & 3600 & female & 2009 \\ 
+  330 & Chinstrap & Dream & 50.70 & 19.70 & 203 & 4050 & male & 2009 \\ 
+  331 & Chinstrap & Dream & 42.50 & 17.30 & 187 & 3350 & female & 2009 \\ 
+  332 & Chinstrap & Dream & 52.20 & 18.80 & 197 & 3450 & male & 2009 \\ 
+  333 & Chinstrap & Dream & 45.20 & 16.60 & 191 & 3250 & female & 2009 \\ 
+  334 & Chinstrap & Dream & 49.30 & 19.90 & 203 & 4050 & male & 2009 \\ 
+  335 & Chinstrap & Dream & 50.20 & 18.80 & 202 & 3800 & male & 2009 \\ 
+  336 & Chinstrap & Dream & 45.60 & 19.40 & 194 & 3525 & female & 2009 \\ 
+  337 & Chinstrap & Dream & 51.90 & 19.50 & 206 & 3950 & male & 2009 \\ 
+  338 & Chinstrap & Dream & 46.80 & 16.50 & 189 & 3650 & female & 2009 \\ 
+  339 & Chinstrap & Dream & 45.70 & 17.00 & 195 & 3650 & female & 2009 \\ 
+  340 & Chinstrap & Dream & 55.80 & 19.80 & 207 & 4000 & male & 2009 \\ 
+  341 & Chinstrap & Dream & 43.50 & 18.10 & 202 & 3400 & female & 2009 \\ 
+  342 & Chinstrap & Dream & 49.60 & 18.20 & 193 & 3775 & male & 2009 \\ 
+  343 & Chinstrap & Dream & 50.80 & 19.00 & 210 & 4100 & male & 2009 \\ 
+  344 & Chinstrap & Dream & 50.20 & 18.70 & 198 & 3775 & female & 2009 \\ 
+   \hline
+\end{tabular}
+\caption{ Data on adult foraging penguins near Palmer Station, Anterctica.} 
+\label{penguins.tab}
+\end{table}
+
+\begin{knitrout}\scriptsize
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{pdf}\hldef{(}\hlsng{"figure/penguins.pdf"}\hldef{,} \hlkwc{width} \hldef{=} \hlnum{8}\hldef{,} \hlkwc{height} \hldef{=} \hlnum{5}\hldef{)}
+\hlkwd{plot}\hldef{(penguins)}
+\hlkwd{dev.off}\hldef{()}
+\end{alltt}
+\begin{verbatim}
+## pdf 
+##   2
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
 
 
 \end{document}

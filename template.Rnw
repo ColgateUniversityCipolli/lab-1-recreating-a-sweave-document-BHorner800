@@ -208,7 +208,30 @@ table.placement = "H", include.rownames=FALSE, size = "small")
 \section{Appendix}
 Below is a table from a paper I'm currently working on. Without the analysis object in \texttt{R}, I have to create this table myself.
 <<size='scriptsize'>>=
-
 @
+
+
+The \texttt{palmerpenguins} package for \texttt{R} \citep{Palmerpenguins} provides data on adult foraging penguins near Palmer Station, Antarctica. \ref{Palmerpenguins.tab} is too big to fit nicely in our column-based-template above, so I've placed it here in the abstract by saving it and presenting it scaled to 0.75.
+
+
+<<echo = FALSE, size = 'scriptsize'>>=
+library(palmerpenguins)
+data(penguins)
+
+penguins.table<-xtable(penguins,
+                       label = "penguins.tab",
+                       caption = " Data on adult foraging penguins near Palmer Station, Anterctica.")
+@
+
+<<results="asis", echo=FALSE>>=
+print(penguins.table)
+@      
+<<size ='scriptsize'>>=
+pdf("figure/penguins.pdf", width = 8, height = 5)
+plot(penguins)
+dev.off()
+@
+
+
 
 \end{document}
